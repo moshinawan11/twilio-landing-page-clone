@@ -29,9 +29,12 @@
             <!--Navbar Links List-->
             <ul
                 class="navbar-links col-xl col-lg-7 col-9 d-none d-md-flex flex-row justify-content-around gap-xl-5 mb-0">
-                <li class="d-flex align-items-center gap-2">Products <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
-                <li class="d-flex align-items-center gap-2">Resources <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
-                <li class="d-flex align-items-center gap-2">Pricing <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
+                <li class="d-flex align-items-center gap-2">Products <span>&gt;</span>
+                    <!--<i class="fa-solid fa-angle-down"></i>--></li>
+                <li class="d-flex align-items-center gap-2">Resources <span>&gt;</span>
+                    <!--<i class="fa-solid fa-angle-down"></i>--></li>
+                <li class="d-flex align-items-center gap-2">Pricing <span>&gt;</span>
+                    <!--<i class="fa-solid fa-angle-down"></i>--></li>
                 <li class="d-none d-lg-flex align-items-center gap-2">Contact Sales</li>
             </ul>
 
@@ -340,56 +343,206 @@
                     <span>Launch</span> a proof of concept quickly
                 </h2>
 
-                <!--Accordion Div (containing expandable cards)-->
-                <div class="accordion d-flex flex-column gap-3">
+                <!--Bootstrap Accordion (containing expandable cards)-->
+                <div class="accordion d-flex flex-column gap-3" id="accordion">
 
-                    <!--Bootstrap Card-->
-                    <div class="card">
-                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                            <button class="btn">
+                    <!--Accordion Item-->
+                    <div class="accordion-item">
+                        <!--Accordion Header-->
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 Viber Messaging
                             </button>
-                            <i class="fa-solid fa-angle-down"></i>
+                        </h2>
+                        <!--Accordion Collapsed Body-->
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>
+                                    Activate first-party data with a customer data platform (CDP) to acquire customers
+                                efficiently. Then keep them engaged by using Twilio's CustomerAl technology to create
+                                personalized journeys that predict the next-best action.
+                                </p>
+                                <div class=" first-div d-flex flex-row align-items-center justify-content-start p-3 gap-3">
+                                    <img src="assets/images/site-logo-sm.svg">
+                                    <div>
+                                        <h3 class="m-0">86% of consumers</h3>
+                                        <p class="m-0">
+                                            say personalization increases brand loyalty 
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="mb-4 mt-3">Top Features</h2>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3 mb-4">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>
+                                        <h3 class="m-0">Fast SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                    <i class="fa-solid fa-shield"></i>
+                                    <div>
+                                        <h3 class="m-0">Secure SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!--Bootstrap Card-->
-                    <div class="card">
-                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                            <button class="btn">
+                    <!--Accordion Item-->
+                    <div class="accordion-item">
+                        <!--Accordion Header-->
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Viber Messaging
                             </button>
-                            <i class="fa-solid fa-angle-down"></i>
+                        </h2>
+                        <!--Accordion Collapsed Body-->
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>
+                                    Activate first-party data with a customer data platform (CDP) to acquire customers
+                                efficiently. Then keep them engaged by using Twilio's CustomerAl technology to create
+                                personalized journeys that predict the next-best action.
+                                </p>
+                                <div class=" first-div d-flex flex-row align-items-center justify-content-start p-3 gap-3">
+                                    <img src="assets/images/site-logo-sm.svg">
+                                    <div>
+                                        <h3 class="m-0">86% of consumers</h3>
+                                        <p class="m-0">
+                                            say personalization increases brand loyalty 
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="mb-4 mt-3">Top Features</h2>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3 mb-4">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>
+                                        <h3 class="m-0">Fast SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                    <i class="fa-solid fa-shield"></i>
+                                    <div>
+                                        <h3 class="m-0">Secure SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!--Bootstrap Card-->
-                    <div class="card">
-                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                            <button class="btn">
+                    <!--Accordion Item-->
+                    <div class="accordion-item">
+                        <!--Accordion Header-->
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Viber Messaging
                             </button>
-                            <i class="fa-solid fa-angle-down"></i>
+                        </h2>
+                        <!--Accordion Collapsed Body-->
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>
+                                    Activate first-party data with a customer data platform (CDP) to acquire customers
+                                efficiently. Then keep them engaged by using Twilio's CustomerAl technology to create
+                                personalized journeys that predict the next-best action.
+                                </p>
+                                <div class=" first-div d-flex flex-row align-items-center justify-content-start p-3 gap-3">
+                                    <img src="assets/images/site-logo-sm.svg">
+                                    <div>
+                                        <h3 class="m-0">86% of consumers</h3>
+                                        <p class="m-0">
+                                            say personalization increases brand loyalty 
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="mb-4 mt-3">Top Features</h2>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3 mb-4">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>
+                                        <h3 class="m-0">Fast SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                    <i class="fa-solid fa-shield"></i>
+                                    <div>
+                                        <h3 class="m-0">Secure SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!--Bootstrap Card-->
-                    <div class="card">
-                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                            <button class="btn">
+                    <!--Accordion Item-->
+                    <div class="accordion-item">
+                        <!--Accordion Header-->
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 Viber Messaging
                             </button>
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                    </div>
-
-                    <!--Bootstrap Card-->
-                    <div class="card">
-                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                            <button class="btn">
-                                Viber Messaging
-                            </button>
-                            <i class="fa-solid fa-angle-down"></i>
+                        </h2>
+                        <!--Accordion Collapsed Body-->
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>
+                                    Activate first-party data with a customer data platform (CDP) to acquire customers
+                                efficiently. Then keep them engaged by using Twilio's CustomerAl technology to create
+                                personalized journeys that predict the next-best action.
+                                </p>
+                                <div class=" first-div d-flex flex-row align-items-center justify-content-start p-3 gap-3">
+                                    <img src="assets/images/site-logo-sm.svg">
+                                    <div>
+                                        <h3 class="m-0">86% of consumers</h3>
+                                        <p class="m-0">
+                                            say personalization increases brand loyalty 
+                                        </p>
+                                    </div>
+                                </div>
+                                <h2 class="mb-4 mt-3">Top Features</h2>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3 mb-4">
+                                    <i class="fa-regular fa-clock"></i>
+                                    <div>
+                                        <h3 class="m-0">Fast SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                                    <i class="fa-solid fa-shield"></i>
+                                    <div>
+                                        <h3 class="m-0">Secure SMS Sending</h3>
+                                        <p class="m-0">
+                                            Lorem Ipsum is simply dummy text of the printing  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
