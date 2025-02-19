@@ -103,6 +103,7 @@ nav>div>img {
 .intro-section>div>div>h1>span:nth-child(2) {
     color: #FF3B3B;
     background: url(assets/images/underline.png) no-repeat bottom;
+    padding: 10px 25px;
 }
 
 .intro-section>div>div>ul {
@@ -331,12 +332,12 @@ nav>div>img {
 /* --------------------------------------- */
 
 /* Product features section bg pattern images */
-.product-features-section>div {
+.product-features-section {
     background-image: url(assets/images/product-features-section-bg1.svg),
         url(assets/images/product-features-section-bg2.svg);
     background-repeat: no-repeat, no-repeat;
-    background-size: contain, contain;
-    background-position: bottom left, bottom right;
+    background-size: unset;
+    background-position: left, right;
 }
 
 /* Product Features section para styling */
@@ -383,9 +384,6 @@ nav>div>img {
 }
 
 /* Product features section accordion styling */
-.accordion {
-    width: 100%;
-}
 
 .accordion button, i {
     font-size: 20px;
@@ -395,13 +393,57 @@ nav>div>img {
     color: var(--secondary-color);
 }
 
-.accordion .card {
+.accordion-item {
     border: 2px solid #B8B8BE;
     cursor: pointer;
+    border-radius: var(--bs-accordion-border-radius);
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 2px solid #B8B8BE;
+}
+
+.accordion-item>.accordion-header .accordion-button {
+    border-radius: var(--bs-accordion-inner-border-radius);
 }
 
 .accordion .card-header {
     background-color: white;
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--secondary-color);
+    background-color: inherit;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-body > h2{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.accordion-body > .first-div{
+    background-color: #FFDFE4;
+    border-radius: 5px;
+}
+
+.accordion-body img{
+    width: 30px;
+}
+
+.accordion-body h3{
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.accordion-body p{
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* ---------------------------- */
