@@ -18,7 +18,8 @@
 <body>
 
     <!--Navbar-->
-    <nav class="row d-flex flex-row justify-content-between align-items-center shadow-lg g-0 flex-nowrap">
+    <nav class="row d-flex flex-row justify-content-between align-items-center shadow-lg g-0">
+        <div class="nav-blank-spacing-divs"></div> <!--blank divs for spacing-->
         <figure class="col-xl-3 col-md-2 col-6 m-0">
             <img src="assets/images/site-logo.svg" alt="Site Logo">
         </figure>
@@ -28,9 +29,9 @@
             <!--Navbar Links List-->
             <ul
                 class="navbar-links col-xl col-lg-7 col-9 d-none d-md-flex flex-row justify-content-around gap-xl-5 mb-0">
-                <li class="d-flex align-items-center gap-2">Products <i class="fa-solid fa-angle-down"></i></li>
-                <li class="d-flex align-items-center gap-2">Resources <i class="fa-solid fa-angle-down"></i></li>
-                <li class="d-flex align-items-center gap-2">Pricing <i class="fa-solid fa-angle-down"></i></li>
+                <li class="d-flex align-items-center gap-2">Products <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
+                <li class="d-flex align-items-center gap-2">Resources <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
+                <li class="d-flex align-items-center gap-2">Pricing <span>&gt;</span> <!--<i class="fa-solid fa-angle-down"></i>--></li>
                 <li class="d-none d-lg-flex align-items-center gap-2">Contact Sales</li>
             </ul>
 
@@ -48,6 +49,7 @@
                 <i class="fa-solid fa-bars d-md-none"></i>
             </div>
         </div>
+        <div class="nav-blank-spacing-divs"></div> <!--blank divs for spacing-->
     </nav>
 
     <!--Intro Section (Bootstrap row for wrapping two column divs)-->
@@ -130,7 +132,7 @@
         </h1>
 
         <!--Top Bootstrap row div for wrapping top 3 cards-->
-        <div class="row g-0 gap-5 justify-content-center mb-5">
+        <div class="row g-0 gap-4 justify-content-center mb-4">
 
             <!--Top Left Card div-->
             <div class="col-12 col-xl left-cards">
@@ -186,7 +188,7 @@
         </div>
 
         <!--Middle Bootstrap row div for wrapping middle 3 cards-->
-        <div class="row g-0 gap-5 justify-content-center mb-5">
+        <div class="row g-0 gap-4 justify-content-center mb-4">
 
             <!--Middle Left Card div-->
             <div class="col-12 col-xl left-cards">
@@ -242,7 +244,7 @@
         </div>
 
         <!--Bottom Bootstrap row div for wrapping bottom 3 cards-->
-        <div class="row g-0 gap-5 justify-content-center mb-5">
+        <div class="row g-0 gap-4 justify-content-center mb-4">
 
             <!--Bottom Top Card div-->
             <div class="col-12 col-xl left-cards">
@@ -436,7 +438,7 @@
                     Loved by 10+ million Develpers
                 </h3>
                 <h1 class="section-title text-center text-lg-start">
-                    Send your first <br><span class="pb-2">WhatsApp Message</span><br> in a matter of minutes
+                    Send your first <span class="pb-2 text-nowrap">WhatsApp Message</span> in a matter of minutes
                 </h1>
                 <p class="para text-center text-lg-start">
                     Sign up for a free Twilio account and grab one of our seven official
@@ -602,6 +604,7 @@
                     </div>
                 </div>
             </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
         </div>
 
         <!--Codes Section footer wrapper (row) div-->
