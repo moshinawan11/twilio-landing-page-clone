@@ -1,0 +1,234 @@
+/* For screens larger than 1700px */
+@media screen and (min-width: 1700px) {
+    /* Show blank spacing divs */
+    .blank-spacing-divs {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+    .messaging-services-section>.row {
+        padding: 0 8em;
+    }
+}
+
+/* For screens larger than 1400px */
+@media screen and (min-width: 1400px) {
+    nav {
+        padding: 2em 9em;
+    }
+
+    .intro-section {
+        gap: 100px;
+    }
+}
+
+/* For screens larger than 992px */
+@media screen and (min-width: 992px) {
+    .product-features-section > p{
+        padding: 0 10em; 
+    }
+
+    .feedback-section > p{
+        padding: 0 10em; 
+    }
+}
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .intro-section .para {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .intro-section>div>div>h1 {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+
+    .messaging-services-section>.row {
+        padding: 0 12em;
+    }
+
+    .cpaas-section{
+        padding: 50px 50px;
+    }
+
+    .codes-div{
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 992px */
+@media screen and (max-width: 992px) {
+    .messaging-services-section {
+        padding: 5em;
+    }
+
+    .product-features-section {
+        padding: 5em;
+    }
+
+    .messaging-services-section>.row {
+        padding: 0 5em;
+    }
+
+    .product-features-section>div>div:nth-child(3) {
+        height: 600px;
+    }
+
+    .product-features-section-right {
+        display: none !important;
+    }
+
+    .codes-section {
+        padding: 5em;
+    }
+
+    .codes-div {
+        width: 100%;
+    }
+
+    .try-product-section>div:first-child>div:nth-child(3) {
+        height: 600px;
+    }
+
+    .clients-reviews {
+        border-top: 4px solid var(--primary-color);
+        border-left: none;
+        padding: 80px 109px;
+    }
+
+    .cpaas-section{
+        padding: 0px 200px;
+    }
+
+    .twilio-cep-section > div > div:nth-child(1){
+        padding: 0px 60px;
+    }
+
+    .twilio-cep-section > div > div:nth-child(2){
+        padding: 9em 20px 6em 20px;
+    }
+
+    .twilio-cep-section > div > div:nth-child(2) div{
+        right: 0px;
+    }
+
+    .twilio-cep-section > div > div:nth-child(2) div > button{
+        align-self: center;
+    }
+
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .messaging-services-section>.row {
+        padding: 0 2em;
+    }
+
+    .clients-reviews {
+        padding: 80px 0px;
+    }
+
+    .cpaas-section{
+        padding: 0px 100px;
+    }
+    
+    footer{
+        width: 100%;
+        background-color: #0B0B13;
+        background-image: none;
+    }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 2em 7px;
+    }
+
+    .messaging-services-section {
+        padding: 2em;
+    }
+
+    .intro-section>div>div>h1 {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+
+    .messaging-services-section>.row {
+        padding: 0 0em;
+    }
+
+    .section-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .para {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .messaging-services-section {
+        padding: 2em;
+    }
+
+    .product-features-section {
+        padding: 2em;
+    }
+
+    .codes-section {
+        padding: 2em;
+    }
+
+    .section-heading {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .intro-section {
+        padding: 100px 0px;
+    }
+
+    .intro-section>div:nth-child(2)>div {
+        padding: 0px 60px;
+    }
+
+    .intro-section-msgs-list {
+        padding-right: 30px;
+    }
+
+    .clients-reviews .review {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .cpaas-section{
+        padding: 0px 20px;
+    }
+
+    .product-features-section>div>div:nth-child(3) {
+        height: 400px;
+    }
+
+    .try-product-section>div:first-child>div:nth-child(3) {
+        height: 300px;
+    }
+}
+
+/* For screens smaller than 400px */
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 2em 7px;
+    }
+
+    .get-started-section > div{
+        width: 100%;
+    }
+
+    .feedback-section {
+        padding: 2em;
+    }
+}

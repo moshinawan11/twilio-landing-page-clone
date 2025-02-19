@@ -1,0 +1,1047 @@
+/* Defining variables */
+:root {
+    --primary-color: #F22F46;
+    --secondary-color: #484957;
+    --secondary-color-2: #1A1B2D;
+}
+
+/* Global styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", serif;
+}
+
+nav {
+    padding: 2em 2em;
+}
+
+.navbar-links {
+    list-style: none;
+}
+
+.navbar-links>li {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+
+/* Changing color and setting border on navbar links on hover */
+.navbar-links>li:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    transition: all 0.3s;
+}
+
+.navbar-links>li:hover i{
+    color: var(--primary-color);
+    transition: all 0.3s;
+}
+
+.navbar-links>li:active i {
+    transform: rotate(0.5turn);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+nav>div>img {
+    max-width: 0%;
+}
+
+/* Customized buttons (inherited from bootstrap) */
+.buttons {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.59px;
+    padding: 12px 20px;
+}
+
+.nav-buttons .buttons {
+    padding: 12px 10px;
+}
+
+.nav-buttons i {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.nav-buttons>figure {
+    cursor: pointer;
+}
+
+/* Intro section styling with background pattern images */
+.intro-section {
+    padding: 100px 60px;
+    background-image: url(assets/images/ellipse-1.svg),
+        url(assets/images/ellipse-3.svg),
+        url(assets/images/ellipse-2.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left, center, right;
+}
+
+.intro-section>div>div>h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: -2px;
+    color: var(--secondary-color-2);
+}
+
+/* Changing color of specific words (in span element) */
+.intro-section>div>div>h1>span:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.intro-section>div>div>h1>span:nth-child(2) {
+    color: #FF3B3B;
+    background: url(assets/images/underline.png) no-repeat bottom;
+}
+
+.intro-section>div>div>ul {
+    list-style-image: url(assets/images/check-icon.svg);
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+/* General paragraph text class styling */
+.para {
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.intro-section .para {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.intro-section>div>div>div>p>span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* Setting right div image as background */
+.intro-section>div:nth-child(3) {
+    background-image: url(assets/images/intro-section-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Intro section animated messages list */
+.intro-section-msgs-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+/* Intro section animated messages list items */
+.intro-section-msgs-list>li {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.128);
+}
+
+/* Setting animations on each list item */
+.intro-section-msgs-list>.first {
+    animation-name: messages-animation;
+    animation-delay: 3s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.intro-section-msgs-list>.second {
+    animation-name: messages-animation;
+    animation-delay: 4.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.intro-section-msgs-list>.third {
+    animation-name: messages-animation;
+    animation-delay: 6s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    color: black;
+    background-color: white;
+}
+
+.intro-section-msgs-list>.fourth {
+    animation-name: messages-animation;
+    animation-delay: 7.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    color: black;
+    background-color: white;
+}
+
+.intro-section-msgs-list>.fifth {
+    animation-name: messages-animation;
+    animation-delay: 9s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    color: black;
+    background-color: white;
+}
+
+/* Messages list fifth item's styling */
+.intro-section-msgs-list>.fifth>img {
+    max-width: 150px;
+    height: auto;
+    align-self: center;
+}
+
+.intro-section-msgs-list>.fifth>div>p:nth-child(2) {
+    border-top: 1px solid rgba(0, 0, 0, 0.297);
+    text-align: center;
+}
+
+.intro-section-msgs-list>.fifth>div>p>a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+/* ----------------------------------- */
+
+.intro-section-msgs-list>.sixth {
+    animation-name: messages-animation;
+    animation-delay: 10.5s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Defining messages list animation */
+@keyframes messages-animation {
+    from {
+        top: 50px;
+    }
+
+    to {
+        top: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* General section heading text styling */
+.section-heading {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -2%;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.messaging-services-section>.section-heading:last-child {
+    color: #1A1B2D;
+}
+
+.messaging-services-section>.section-heading:last-child>span {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* General section title text styling */
+.section-title {
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -2%;
+    font-weight: 500;
+}
+
+.section-title>span {
+    color: var(--primary-color);
+}
+
+/* Messaging services section styling (setting pattern bg images)*/
+.messaging-services-section {
+    background-image: url(assets/images/messaging-services-bg-tl.svg),
+        url(assets/images/messaging-services-bg-tr.svg),
+        url(assets/images/messaging-services-bg-bl.svg),
+        url(assets/images/messaging-services-bg-br.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    background-color: #F9F9FC;
+}
+
+.messaging-services-section .wrapper {
+    height: 100%;
+}
+
+/* Messaging services section cards styling */
+.messaging-services-section .card {
+    border-radius: 15px;
+    height: 100%;
+}
+
+.messaging-services-section .left-cards .card {
+    background-color: #FFDFE4;
+}
+
+.messaging-services-section .card-img {
+    max-width: 50px;
+}
+
+.messaging-services-section .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+.messaging-services-section .left-cards .card-title {
+    color: var(--primary-color);
+}
+
+.messaging-services-section .card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #666672;
+}
+
+.messaging-services-section .card-text span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: var(--primary-color);
+}
+
+.messaging-services-section .card-body a {
+    text-decoration: none;
+}
+
+/* --------------------------------------- */
+
+/* Product features section bg pattern images */
+.product-features-section>div {
+    background-image: url(assets/images/product-features-section-bg1.svg),
+        url(assets/images/product-features-section-bg2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    background-position: bottom left, bottom right;
+}
+
+/* Product Features section para styling */
+.product-features-section>.para {
+    color: #1A1B2D;
+}
+
+/* Product Features section accordion heading styling */
+.product-features-section>.row>div:nth-child(2)>h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -2%;
+    color: var(--secondary-color-2);
+}
+
+.product-features-section>.row>div:nth-child(2)>h2>span {
+    color: var(--primary-color);
+}
+
+/* Product features section animated star styling */
+.product-features-section>.row>div:nth-child(2)>div>img {
+    align-self: flex-end;
+    width: 25px;
+    position: relative;
+    animation-name: star-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+/* Product features section star animation */
+@keyframes star-animation {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: 150px;
+    }
+}
+
+/* Product features section accordion styling */
+.accordion {
+    width: 100%;
+}
+
+.accordion button, i {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: var(--secondary-color);
+}
+
+.accordion .card {
+    border: 2px solid #B8B8BE;
+    cursor: pointer;
+}
+
+.accordion .card-header {
+    background-color: white;
+}
+
+/* ---------------------------- */
+
+/* Product Features section right image */
+.product-features-section>.row>div:nth-child(3) {
+    background-image: url(assets/images/products-features-section-img.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.product-features-section-right {
+    height: 100%;
+    width: 100%;
+}
+
+/* Product Features section animated right icons div */
+.product-features-section-right>div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90px;
+}
+
+/* Positioning Product Features section animated right icons */
+.product-features-section-right>div:nth-child(1) {
+    transform: translateX(-30px);
+}
+
+.product-features-section-right>div:nth-child(2) {
+    transform: translateX(0px);
+}
+
+.product-features-section-right>div:nth-child(3) {
+    transform: translateX(70px);
+}
+
+.product-features-section-right>div:nth-child(4) {
+    transform: translateX(70px);
+}
+
+.product-features-section-right>div:nth-child(5) {
+    transform: translateX(30px);
+}
+/* -------------------------------------------- */
+
+/* Styling Product features section right icons */
+.product-features-section-right>div:nth-child(1)>img {
+    width: 80px;
+    animation: heartbeats-animation1 2s ease-in-out 3s infinite alternate-reverse forwards;
+}
+
+.product-features-section-right>div:nth-child(2)>img {
+    width: 110px;
+    transform: translateY(-230px);
+    animation: heartbeats-animation2 2s ease-in-out 0s infinite alternate-reverse forwards;
+}
+
+.product-features-section-right>div:nth-child(3)>img {
+    width: 80px;
+    transform: translateY(-230px);
+    animation: heartbeats-animation3 2s ease-in-out 4s infinite alternate-reverse forwards;
+}
+
+.product-features-section-right>div:nth-child(4)>img {
+    width: 80px;
+    transform: translateY(-170px);
+    animation: heartbeats-animation4 2s ease-in-out 1s infinite alternate-reverse forwards;
+}
+
+.product-features-section-right>div:nth-child(5)>img {
+    width: 110px;
+    animation: heartbeats-animation5 2s ease-in-out 2s infinite alternate-reverse forwards;
+}
+/* --------------------------------- */
+
+/* Product Features section right icons animations for each icon */
+@keyframes heartbeats-animation1 {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 110px;
+    }
+}
+
+@keyframes heartbeats-animation2 {
+    from {
+        width: 110px;
+    }
+
+    to {
+        width: 80px;
+    }
+}
+
+@keyframes heartbeats-animation3 {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 110px;
+    }
+}
+
+@keyframes heartbeats-animation4 {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 110px;
+    }
+}
+
+@keyframes heartbeats-animation5 {
+    from {
+        width: 110px;
+    }
+
+    to {
+        width: 80px;
+    }
+}
+/* -------------------------------------------- */
+
+/* Setting bg pattern images on Codes Section */
+.codes-section {
+    background-color: #0B0B13;
+    background-image: url(assets/images/codes-section-bg.svg), url(assets/images/codes-section-tail.svg);
+    background-position: top right, bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.codes-section .section-heading {
+    color: #B8B8BE;
+}
+
+.codes-section .section-title {
+    line-height: 72px;
+}
+
+.codes-section .section-title span{
+    border-bottom: 3px dashed var(--primary-color);
+}
+
+.codes-section>div>div>h1 {
+    color: white;
+}
+
+.codes-section>div>div>p {
+    color: #B8B8BE;
+}
+
+/* Styling Codes Section footer cards */
+.codes-section-footer {
+    gap: 60px;
+}
+
+.codes-section .card {
+    background-color: inherit;
+    border: none;
+}
+
+.codes-section .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: white;
+}
+
+.codes-section .card-header {
+    margin-bottom: 10px;
+}
+
+.codes-section .card-text {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #B8B8BE;
+}
+/* ---------------------- */
+
+/* Styling Codes-div header (programming languages icons) */
+.codes-div {
+    height: 100%;
+    width: 80%;
+    background-color: #121320;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.codes-div>div:first-child {
+    gap: 10px;
+    border-bottom: 1px solid #96969E;
+}
+
+.codes-div>div:first-child>div {
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.codes-div>div:first-child>div:last-child {
+    cursor: auto;
+}
+
+.codes-div>div:first-child p{
+    cursor: pointer;
+}
+
+.codes-div>div:first-child>div:first-child {
+    border-bottom: 3px solid var(--primary-color);
+}
+/* ------------------------------------- */
+
+/* Styling Code section's code text */
+.code {
+    height: 100%;
+}
+
+.code>.padding-row {
+    gap: 200px;
+}
+
+.code>.padding-row2 {
+    gap: 170px;
+}
+
+.code>div>p {
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0 5px 5px;
+}
+
+.code>div>p>.one {
+    color: #F1AA34;
+}
+
+.code>div>p>.two {
+    color: #9EE248;
+}
+
+.code>div>span {
+    border-right: 1px solid #96969E;
+    padding: 5px 0;
+}
+
+.code-section-text {
+    color: #E8E8EA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.96px;
+    letter-spacing: 0px;
+}
+
+.code-section-text.comment {
+    color: #96969E;
+}
+
+.code-section-text.code-line {
+    color: white;
+}
+/* --------------------------- */
+
+/* Try Product section styling */
+.try-product-section {
+    background-color: #FEEAED;
+}
+
+/* Setting Try Product section right image */
+.try-product-section>div:first-child>div:nth-child(3) {
+    background-image: url(assets/images/try-product-section-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Styling tail (curvy) images */
+.codes-section-tail-img,
+.try-product-section-tail-img {
+    width: 100%;
+}
+
+/* Try Product section footer styling */
+.try-product-section-footer {
+    gap: 60px;
+}
+
+.try-product-section .card {
+    background-color: inherit;
+    border: none;
+}
+
+.try-product-section .card-title {
+    color: var(--secondary-color-2);
+}
+
+.try-product-section .card-header {
+    margin-bottom: 10px;
+    background-color: inherit;
+    border: none;
+}
+
+.try-product-section .card-text {
+    color: #666672;
+}
+/* ------------------------------ */
+
+/* Feedback section bg pattern images */
+.feedback-section {
+    background-image: url(assets/images/feedback-section-bg.svg), url(assets/images/try-product-section-tail.svg);
+    background-position: center, top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5em;
+}
+
+.feedback-section .para {
+    color: var(--secondary-color-2);
+}
+
+/* Styling clients images */
+.clients-images img {
+    cursor: pointer;
+}
+
+.clients-images>div:first-child>img {
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 60px;
+}
+
+.clients-images>div:nth-child(2)>img {
+    border-radius: 60px;
+}
+/* ------------------------ */
+
+/* Styling clients reviews div */
+.clients-reviews {
+    border-left: 4px solid var(--primary-color);
+    gap: 20px;
+    padding: 0 109px;
+}
+
+/* Styling clients review stars */
+.clients-reviews .stars {
+    width: 100%;
+}
+
+/* Styling clients review text */
+.clients-reviews .review {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -2%;
+    width: 100%;
+}
+
+/* Styling clients review name card */
+.client-name {
+    border: none;
+    width: 100%;
+}
+
+.client-name .card-header {
+    background-color: inherit;
+}
+
+.client-name .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: var(--secondary-color-2);
+}
+
+.client-name .card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: var(--primary-color);
+}
+
+.client-name img {
+    width: 100%;
+}
+/* -------------------------- */
+
+/* CPaaS section styling */
+.cpaas-section{
+    padding: 50px 150px;
+}
+
+/* Styling CPaaS section animated cards */
+.cpaas-section .card{
+    background-color: inherit;
+    border: 1px solid #96969E;
+    border-radius: 15px;
+    padding: 25px;
+    gap: 20px;
+    height: 100%;
+}
+
+.cpaas-section .card-header{
+    background-color: inherit;
+    border: none;
+}
+
+/* Styling CPaaS section cards headings */
+.cpaas-section .header-wrapper{
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+
+.cpaas-section .header-wrapper.first{
+    background-color: #FFCF73;
+}
+
+.cpaas-section .header-wrapper.second{
+    background-color: #84F3CA;
+}
+
+.cpaas-section .header-wrapper.third{
+    background-color: #82CDFF;
+}
+
+.cpaas-section .header-wrapper h2{
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+/* Styling CPaaS section animated card */
+.cpaas-section .card {
+    cursor: pointer;
+}
+
+.cpaas-section .card-body {
+    gap: 20px;
+}
+
+.cpaas-section .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -2%;
+}
+
+.cpaas-section .card-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #666672;
+}
+
+/* Setting bg color transition on heading on hover */
+.cpaas-section .card.first:hover .header-wrapper{
+    background-color: white;
+    transition: background-color, 0.5s;
+}
+
+.cpaas-section .card.second:hover .header-wrapper{
+    background-color: white;
+    transition: background-color, 0.5s;
+}
+
+.cpaas-section .card.third:hover .header-wrapper{
+    background-color: white;
+    transition: background-color, 0.5s;
+}
+/* -------------------------------------- */
+
+/* Styling animation circle */
+.animation-circle{
+    bottom: -200px;
+    right: -200px;
+    border-radius: 1000px;
+    opacity: 0;
+}
+
+/* Setting circle animations */
+.cpaas-section .card.first:hover .animation-circle{
+    background-color: #FFCF73;
+    animation: circle-animation 0.5s linear alternate forwards;
+}
+
+.cpaas-section .card.second:hover .animation-circle{
+    background-color: #84F3CA;
+    animation: circle-animation 0.5s linear alternate forwards;
+}
+
+.cpaas-section .card.third:hover .animation-circle{
+    background-color: #82CDFF;
+    animation: circle-animation 0.5s linear alternate forwards;
+}
+/* ----------------------------- */
+
+/* Defining circle animation */
+@keyframes circle-animation {
+    from{
+        height: 0px;
+        width: 0px;
+        opacity: 0;
+    }
+    to{
+        height: 1000px;
+        width: 1000px;
+        opacity: 1;
+    }
+}
+
+.twilio-cep-section > div > div:nth-child(1){
+    padding: 40px 60px;
+}
+
+.twilio-cep-section > div > div:nth-child(1) img{
+    max-width: 100%;
+    height: auto;
+    top: 7em;
+}
+
+/* Styling Twilio CEP section right div */
+.twilio-cep-section > div > div:nth-child(2){
+    background-color: #FEEAED;
+    padding: 40px 60px 40px 60px;
+}
+
+/* Relativley positioning Twilio CEP section left image */
+.twilio-cep-section > div > div:nth-child(2) div{
+    position: relative;
+}
+
+.twilio-cep-section .image-wrapper{
+    width: 200px;
+    right: 450px;
+}
+/* -------------------------- */
+
+.twilio-cep-section button{
+    background-color: inherit;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -2%;
+    color: var(--secondary-color-2);
+    align-self: flex-start;
+}
+
+.twilio-cep-section button i{
+    color: var(--secondary-color-2);
+}
+
+/* Positioning Get Started section through transform */
+.get-started-section > div{
+    width: 70%;
+    background-color: #F9F9FC;
+    border-radius: 20px;
+    transform: translateY(6em);
+}
+
+.get-started-section p{
+    color: var(--secondary-color-2);
+}
+
+/* Setting bg pattern images on footer */
+footer{
+    width: 100%;
+    background-color: #0B0B13;
+    background-image: url(assets/images/footer-bg-left.svg),
+                        url(assets/images/footer-bg-right.svg);
+    background-position: left, right;
+    background-repeat: no-repeat;
+    background-size: contain, contain;
+}
+
+footer .socials > img{
+    width: 185px;
+}
+
+/* Applying transition on social sites icons */
+footer .icons-wrapper img{
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+footer .icons-wrapper img:hover{
+    transform: translateY(-10px);
+}
+
+footer .para{
+    color: #B8B8BE;
+}
+
+/* Setting hover transition on footer links */
+.footer-links .para{
+    position: relative;
+    transform: translateX(-25px);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.footer-links li:hover .footer-para{
+    transform: translateX(0px);
+    color: var(--primary-color);
+}
+
+/* Setting hover transition on footer arrow icons */
+.footer-links i{
+    transform: scaleX(0);
+    opacity: 0;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: opacity 0.5s;
+}
+
+.footer-links li:hover .footer-arrow-icon{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.footer-links, .footer-contact h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    color: white;
+}
+
+
+
+
+

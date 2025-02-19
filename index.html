@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Twilio Website</title>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="row d-flex flex-row justify-content-between align-items-center shadow-lg g-0 flex-nowrap">
+        <figure class="col-xl-3 col-md-2 col-6 m-0">
+            <img src="assets/images/site-logo.svg" alt="Site Logo">
+        </figure>
+        <div
+            class="row col d-flex flex-row justify-content-md-around justify-content-end align-items-center mx-0 g-0 gap-4 flex-nowrap">
+
+            <!--Navbar Links List-->
+            <ul
+                class="navbar-links col-xl col-lg-7 col-9 d-none d-md-flex flex-row justify-content-around gap-xl-5 mb-0">
+                <li class="d-flex align-items-center gap-2">Products <i class="fa-solid fa-angle-down"></i></li>
+                <li class="d-flex align-items-center gap-2">Resources <i class="fa-solid fa-angle-down"></i></li>
+                <li class="d-flex align-items-center gap-2">Pricing <i class="fa-solid fa-angle-down"></i></li>
+                <li class="d-none d-lg-flex align-items-center gap-2">Contact Sales</li>
+            </ul>
+
+            <!--Navbar Buttons-->
+            <div class="nav-buttons col-xl-4 col d-flex flex-row justify-content-end align-items-center gap-3">
+                <figure class="mb-0 d-none d-lg-block">
+                    <img src="assets/images/search-icon.svg">
+                </figure>
+                <button class="btn btn-outline-danger buttons d-none d-lg-block">
+                    Contact Sales
+                </button>
+                <button class="btn btn-danger buttons">
+                    Start for free
+                </button>
+                <i class="fa-solid fa-bars d-md-none"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Intro Section (Bootstrap row for wrapping two column divs)-->
+    <section class="intro-section row d-flex flex-column-reverse flex-lg-row g-0 gap-5 gap-lg-2">
+        <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+        <!--Left Column Div (containing text)-->
+        <div class="col-12 col-lg">
+
+            <!--Div for wrapping text elements-->
+            <div class="d-flex justify-content-xxl-center flex-column gap-4">
+                <h1 class="text-center text-lg-start">
+                    <span>100% Guaranteed</span>
+                    protection from <span>SMS</span>
+                    pumping fraud
+                </h1>
+                <p class="para text-center text-lg-start">
+                    Our customers processed 4 billion messages and over 64 billion emails. That's 8 messages or emails
+                    to every person in the world. Explore how you can experience this growth and scale with Twilio.
+                </p>
+                <ul
+                    class="d-flex flex-column flex-sm-row gap-3 justify-content-start para  justify-content-center justify-content-lg-start align-items-center">
+                    <li>Free 14-day trial</li>
+                    <li>Automation</li>
+                    <li>Omnichannel messaging</li>
+                </ul>
+                <div
+                    class="d-flex gap-0 gap-sm-5 flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center">
+                    <p class="para">
+                        Trusted by<br>
+                        <span>37,000+</span> companies
+                    </p>
+                    <img src="assets/images/intro-section-companies.svg" alt="Companies Icons">
+                </div>
+            </div>
+        </div>
+
+        <!--Right Column Div (containg image and animated messages)-->
+        <div class="col-12 col-lg d-flex justify-content-center">
+
+            <!--Animated messages list-->
+            <ul class="intro-section-msgs-list">
+                <li class="first">
+                    Hello &#128075
+                </li>
+                <li class="second">
+                    I'm looking for a Laptop
+                </li>
+                <li class="third">
+                    Hi! Check out this model
+                </li>
+                <li class="fourth">
+                    Hi! Check out this model
+                </li>
+                <li class="fifth card">
+                    <img class="card-img-top" src="assets/images/laptop.svg" alt="Laptop">
+                    <div class="card-body mt-0">
+                        <p class="card-text">HP-I6 Generation 8GB 500GB </br> <b>$217.01</b></p>
+                        <p class="mb-0 pt-2"><a href="#" class="text-center align-self-center">Buy Now...!</a></p>
+                    </div>
+                </li>
+                <li class="sixth">
+                    Waw! Will take it &#128525
+                </li>
+            </ul>
+        </div>
+        <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+    </section>
+
+    <!--Messaging Services Section-->
+    <section class="messaging-services-section container-fluid p-lg-5">
+
+        <!--Messaging Services heading and text-->
+        <h3 class="section-heading text-center mb-5">
+            <img src="assets/images/site-logo-sm.svg" alt="Site Logo Small">
+            What We Offer
+        </h3>
+        <h1 class="section-title text-center mb-5">
+            Twilio now comes <span>with an wide </span><br> array of other services.
+        </h1>
+
+        <!--Top Bootstrap row div for wrapping top 3 cards-->
+        <div class="row g-0 gap-5 justify-content-center mb-5">
+
+            <!--Top Left Card div-->
+            <div class="col-12 col-xl left-cards">
+                <div class="wrapper">
+                    <!--Bootstrap card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">SMS</h5>
+                            <p class="card-text">
+                                Fast, reliable message delivery through our globally connected API
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Top Middle Card div-->
+            <div class="col-12 col-xl middle-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/send-icon.svg" alt="Send Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Send</h5>
+                            <p class="card-text mb-2">
+                                <span>$ 0.279</span> price per sms
+                            </p>
+                            <p class="card-text">
+                                <a href="#"><img class="pe-2" src="assets/images/download-icon.svg"
+                                        alt="Download Icon">Download Price Plans</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Top Right Card div-->
+            <div class="col-12 col-xl right-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/receive-icon.svg" alt="Receive Icon">
+                        <div class="card-body d-flex justify-content-center flex-column">
+                            <h5 class="card-title">Receive</h5>
+                            <p class="card-text mb-2">
+                                <span>Free</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Middle Bootstrap row div for wrapping middle 3 cards-->
+        <div class="row g-0 gap-5 justify-content-center mb-5">
+
+            <!--Middle Left Card div-->
+            <div class="col-12 col-xl left-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row px-3 py-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">SMS</h5>
+                            <p class="card-text">
+                                Fast, reliable message delivery through our globally connected API
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Middle Mid Card div-->
+            <div class="col-12 col-xl middle-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/send-icon.svg" alt="Send Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Send</h5>
+                            <p class="card-text mb-2">
+                                <span>$ 0.279</span> price per sms
+                            </p>
+                            <p class="card-text">
+                                <a href="#"><img class="pe-2" src="assets/images/download-icon.svg"
+                                        alt="Download Icon">Download Price Plans</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Middle Right Card div-->
+            <div class="col-12 col-xl right-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/receive-icon.svg" alt="Receive Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Receive</h5>
+                            <p class="card-text mb-2">
+                                <span>Free</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Bottom Bootstrap row div for wrapping bottom 3 cards-->
+        <div class="row g-0 gap-5 justify-content-center mb-5">
+
+            <!--Bottom Top Card div-->
+            <div class="col-12 col-xl left-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row px-3 py-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">SMS</h5>
+                            <p class="card-text">
+                                Fast, reliable message delivery through our globally connected API
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bottom Middle Card div-->
+            <div class="col-12 col-xl col-xl middle-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/send-icon.svg" alt="Send Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Send</h5>
+                            <p class="card-text mb-2">
+                                <span>$ 0.279</span> price per sms
+                            </p>
+                            <p class="card-text">
+                                <a href="#"><img class="pe-2" src="assets/images/download-icon.svg"
+                                        alt="Download Icon">Download Price Plans</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Bottom Right Card div-->
+            <div class="col-12 col-xl right-cards">
+                <div class="wrapper">
+                    <!--Bootstrap Card-->
+                    <div class="card flex-row p-3 border-0">
+                        <img class="card-img mx-xxl-5" src="assets/images/receive-icon.svg" alt="Receive Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Receive</h5>
+                            <p class="card-text mb-2">
+                                <span>Free</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--Messaging Services Section bottom text-->
+        <h3 class="section-heading text-center mt-5 mb-3">
+            Need Any Consultation's For New Services? <span>Contact Us</span> 
+        </h3>
+    </section>
+
+    <!--Product Features Section-->
+    <section class="product-features-section p-lg-5">
+        <!--Product Features Section text elements-->
+        <h3 class="section-heading text-center mt-2 mb-5">
+            <img src="assets/images/site-logo-sm.svg" alt="Site Logo Small">
+            Product Features
+        </h3>
+        <h1 class="section-title text-center">
+            Connect the dots across your <br><span>customer journey</span> with better data + AI
+        </h1>
+        <p class="para text-center my-5">
+            Twilio is the industry-leading and trusted platform that efficiently powers your customer engagement
+            innovation.
+        </p>
+
+        <!--Bootstrap row div for wrapping two column divs)-->
+        <div class="row g-0 gap-3">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Left Column Div (containing expandable accordion)-->
+            <div class="col-12 col-lg d-flex flex-column">
+
+                <!--Div containing animated star-->
+                <div class="d-flex flex-column">
+                    <img src="assets/images/star-vector.svg" alt="Star Vector">
+                </div>
+
+                <!--Accordion heading text-->
+                <h2 class="d-inline-block mb-5 mt-3"> <img class="d-inline-block pe-2"
+                        src="assets/images/launch-icon.svg" alt="Launch Icon">
+
+                    <span>Launch</span> a proof of concept quickly
+                </h2>
+
+                <!--Accordion Div (containing expandable cards)-->
+                <div class="accordion d-flex flex-column gap-3">
+
+                    <!--Bootstrap Card-->
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn">
+                                Viber Messaging
+                            </button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <!--Bootstrap Card-->
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn">
+                                Viber Messaging
+                            </button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <!--Bootstrap Card-->
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn">
+                                Viber Messaging
+                            </button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <!--Bootstrap Card-->
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn">
+                                Viber Messaging
+                            </button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+
+                    <!--Bootstrap Card-->
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <button class="btn">
+                                Viber Messaging
+                            </button>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Right Column Div (containing image and animated icons)-->
+            <div class="col-12 col-lg">
+                <div class="product-features-section-right d-flex align-items-center justify-content-center">
+                    <div>
+                        <img src="assets/images/products-features-section-comp1.svg">
+                    </div>
+                    <div>
+                        <img src="assets/images/products-features-section-comp2.svg">
+                    </div>
+                    <div>
+                        <img src="assets/images/products-features-section-comp3.svg">
+                    </div>
+                    <div>
+                        <img src="assets/images/products-features-section-comp4.svg">
+                    </div>
+                    <div>
+                        <img src="assets/images/products-features-section-comp5.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+
+        <!--Product-Features-Section bottom text-->
+        <h1 class="section-title text-center mt-5">
+            Loved by <span>10+ million</span> developers
+        </h1>
+    </section>
+
+    <!--Codes Section-->
+    <section class="codes-section p-lg-5">
+
+        <!--Bootstrap row div (for wrapping left and right divs)-->
+        <div class="row g-0 gap-5 gap-lg-0">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Left Column Div (containing text and buttons)-->
+            <div class="col-12 col-lg-6 col-xl d-flex flex-column justify-content-center gap-4">
+                <h3 class="section-heading text-center text-lg-start">
+                    <img src="assets/images/site-logo-sm.svg" alt="Site Logo Small">
+                    Loved by 10+ million Develpers
+                </h3>
+                <h1 class="section-title text-center text-lg-start">
+                    Send your first <br><span class="pb-2">WhatsApp Message</span><br> in a matter of minutes
+                </h1>
+                <p class="para text-center text-lg-start">
+                    Sign up for a free Twilio account and grab one of our seven official
+                    server-side SDKs to get started. Send your first text message, phone
+                    call, or email in minutes and when you're ready to launch your app,
+                    upgrade to a pay-as-you-go plan.
+                </p>
+                <div
+                    class="buttons-div d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-items-center gap-3">
+                    <button class="btn btn-danger buttons">
+                        View the docs
+                    </button>
+                    <button class="btn btn-outline-danger buttons">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+            <!--Right Column Div (containing code)-->
+            <div class="col-12 col-lg-6 col-xl d-flex justify-content-center">
+
+                <!--Code Div Wrapper-->
+                <div class="codes-div d-flex flex-column">
+
+                    <!--Programming languages icons wrapper-->
+                    <div class="row d-flex flex-nowrap g-0">
+
+                        <!--Programming languages icons-->
+                        <div class="col">
+                            <img src="assets/images/python-logo.svg">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/javascript-logo.svg">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/csharp-logo.svg">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/php-logo.svg">
+                        </div>
+                        <div class="col">
+                            <img src="assets/images/java-logo.svg">
+                        </div>
+                        <div class="col-3 d-flex flex-row justify-content-end align-items-center">
+                            <p class="m-0 code-section-text"><img src="assets/images/copy-icon.svg"> Copy</p>
+                        </div>
+                    </div>
+
+                    <!--Code text div-->
+                    <div class="code">
+
+                        <!--Bootstrap row divs (each containing one line of code number and text)-->
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">1</span>
+                            <p class="col code-section-text comment mb-0 pb-1">
+                                # Download the helper library from https://www.twilio.com/docs/python/install
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">2</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                <span class="one">import</span> os
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">3</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                <span class="one">from</span> twilio.rest <span class="one">import</span> Client
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">4</span>
+                            <p class="col code-section-text comment mb-0 pb-1 invisible">
+                                # Download the helper library from https://www.twilio.com/docs/python/install
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">5</span>
+                            <p class="col code-section-text comment mb-0 pb-1">
+                                # Find your Account SID and Auth Token at twilio.com/console
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">6</span>
+                            <p class="col code-section-text comment mb-0 pb-1">
+                                # and set the environment variables. See http://twil.io/secure
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">7</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                account_sid <span class="two">=</span> os.environ<span
+                                    class="two">['TWILIO_ACCOUNT_SID']</span>
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">8</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                auth_token <span class="two">=</span> os.environ<span
+                                    class="two">['TWILIO_ACCOUNT_SID']</span>
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">9</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                client <span class="two">=</span> Client(account_sid, auth_token)
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">9</span>
+                            <p class="col code-section-text comment mb-0 pb-1 invisible">
+                                # Download the helper library from https://www.twilio.com/docs/python/install
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">9</span>
+                            <p class="col code-section-text comment mb-0 pb-1 invisible">
+                                # Download the helper library from https://www.twilio.com/docs/python/install
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">10</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                message <span class="two">=</span> client.messages.create(
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">11</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                message <span class="two">=</span> client.messages.create(
+                            </p>
+                        </div>
+                        <div class="row g-0 padding-row">
+                            <span class="col-1 code-section-text comment">13</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                body <span class="two">= 'Hi there',</span>
+                            </p>
+                        </div>
+                        <div class="row g-0 padding-row">
+                            <span class="col-1 code-section-text comment">14</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                from_ <span class="two">= '+15017122661',</span>
+                            </p>
+                        </div>
+                        <div class="row g-0 padding-row">
+                            <span class="col-1 code-section-text comment">15</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                to <span class="two">= '+15558675310'</span>
+                            </p>
+                        </div>
+                        <div class="row g-0 padding-row2">
+                            <span class="col-1 code-section-text comment">16</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                )
+                            </p>
+                        </div>
+                        <div class="row g-0">
+                            <span class="col-1 code-section-text comment">17</span>
+                            <p class="col code-section-text code-line mb-0 pb-1">
+                                <span class="one">print</span>(message.sid)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Codes Section footer wrapper (row) div-->
+        <div class="codes-section-footer row g-0 my-5">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        Official SDKs
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Build quickly and confidently with our SDKs for Node.js, Python, C#, Java, PHP, Ruby, and
+                        Go.
+                    </p>
+                </div>
+            </div>
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        Twilio Functions
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Bring ideas to life without having to host your own code by deploying with Twilio Functions.
+                    </p>
+                </div>
+            </div>
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        99.95%+ API uptime
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Reliable availability you can trust to power your app’s most important features.
+                    </p>
+                </div>
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+    </section>
+
+    <!--Try Product Section-->
+    <section class="try-product-section p-5 p-lg-5 d-flex flex-column gap-lg-5">
+
+        <!--Bootstrap row div for wrapping left and right divs-->
+        <div class="row g-0">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Left Column Div (containing text and button)-->
+            <div class="col-12 col-lg d-flex flex-column justify-content-center gap-3">
+                <h3 class="section-heading text-center text-lg-start">
+                    <img src="assets/images/site-logo-sm.svg" alt="Site Logo Small">
+                    Code that every one can use
+                </h3>
+                <h1 class="section-title text-center text-lg-start">
+                    No coding <span>experience?</span><br> No problem.
+                </h1>
+                <p class="para text-center text-lg-start">
+                    You don’t have to be a developer to use Twilio. You can visually create, edit, and manage
+                    communication workflows too.
+                </p>
+                <div
+                    class="buttons-div d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-items-center gap-3">
+                    <button class="btn btn-danger buttons">
+                        Try Studio
+                    </button>
+                    <button class="btn btn-outline-danger buttons">
+                        View studio User guide
+                    </button>
+                </div>
+            </div>
+
+            <!--Right Column Div (containing image)-->
+            <div class="col-12 col-lg d-flex justify-content-center">
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+
+        <!--Try Product Section Footer wrapper (row) div-->
+        <div class="try-product-section-footer row g-0">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        Launch a proof of concept quickly
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Test out your ideas for voice, messaging, and communication apps in a drag-and-drop visual
+                        editor that’s easy to use.
+                    </p>
+                </div>
+            </div>
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        Build IVRs for every user, any channel
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Create dynamic IVRs that respond intelligently to customer inputs using AI and flexible APIs.
+                    </p>
+                </div>
+            </div>
+
+            <!--Bootstrap Card-->
+            <div class="col-12 col-lg card">
+                <div class="card-header p-0">
+                    <h5 class="card-title m-0 text-center text-lg-start">
+                        Start for free. Pay as you go.
+                    </h5>
+                </div>
+                <div class="card-body p-0">
+                    <p class="card-text text-center text-lg-start">
+                        Keep your costs low. With Serverless on Twilio, you pay as you go so you can control costs and
+                        scale up as your use case grows.
+                    </p>
+                </div>
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+    </section>
+
+    <!--Feedback Section-->
+    <section class="feedback-section p-lg-5 d-flex flex-column justify-content-center gap-4">
+
+        <!--Feedback Section heading and text-->
+        <h3 class="section-heading text-center mt-5">
+            <img src="assets/images/site-logo-sm.svg" alt="Site Logo Small">
+            Clients Feedback
+        </h3>
+        <h1 class="section-title text-center">
+            What <span>Clients Say</span> Us
+        </h1>
+        <p class="para text-center">
+            Explore what the world’s leading businesses, from startups to global enterprises, have achieved with the
+            Twilio Customer Engagement Platform.
+        </p>
+
+        <!--Clients reviews wrapper row div-->
+        <div class="clients-wrapper row g-0 gap-5 gap-lg-0">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+
+            <!--Left column div (containing clients images)-->
+            <div class="clients-images col-12 col-lg-4 d-flex flex-column justify-content-center gap-5">
+                <div class="img-wrapper text-center">
+                    <img src="assets/images/professor-client-img.svg">
+                </div>
+                <div class="img-wrapper text-center">
+                    <img src="assets/images/tokyo-client-img.svg">
+                </div>
+                <div class="img-wrapper text-center">
+                    <img src="assets/images/berlin-client-img.svg">
+                </div>
+            </div>
+
+            <!--Right column div (containing clients reviews)-->
+            <div class="clients-reviews col-12 col-lg d-flex flex-column justify-content-center align-items-center">
+
+                <!--Div containing rating stars-->
+                <div class="stars text-center text-lg-start">
+                    <img src="assets/images/star-icon-filled.svg">
+                    <img src="assets/images/star-icon-filled.svg">
+                    <img src="assets/images/star-icon-filled.svg">
+                    <img src="assets/images/star-icon.svg">
+                    <img src="assets/images/star-icon.svg">
+                </div>
+
+                <!--Div containing review text-->
+                <div class="review">
+                    <p class="m-0 text-center text-lg-start">
+                        Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium dolore mquey laudantium,
+                        totam
+                        rem aperiam eaque ipsa quae abillo inventore veritatis quase
+                    </p>
+                </div>
+
+                <!--Card Div containing client name-->
+                <div class="card flex-row client-name align-items-center justify-content-lg-start">
+                    <div class="card-header p-0 d-flex align-items-center">
+                        <img src="assets/images/message-icon.svg" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mb-0">Sergio Marquina</h5>
+                        <p class="card-text">Web Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+    </section>
+
+    <!--CPaaS Section (containg 3 cards)-->
+    <section class="cpaas-section mt-5">
+
+        <!--Section heading-->
+        <h1 class="section-title text-center">
+            Twilio combines the best in <br><span>communications</span> and customer data
+        </h1>
+
+        <!--Bootstrap Row Div (for wrapping 3 animated cards)-->
+        <div class="row g-0 gap-5 mt-5">
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+            <!--Bootstrap Column Div (wrapping animated card)-->
+            <div class="col-12 col-lg">
+                <!--First Animated Card-->
+                <div class="card first position-relative overflow-hidden">
+                    <div class="card-header d-flex flex-row justify-content-between p-0 z-1">
+                        <div class="header-wrapper first">
+                            <h2 class="mb-0">
+                                Twilio CPaaS
+                            </h2>
+                        </div>
+                        <img src="assets/images/right-arrow-icon.svg">
+                    </div>
+                    <div class="card-body d-flex flex-column p-0 z-1">
+                        <h2 class="card-title mb-0">
+                            Reach your customers across any channel
+                        </h2>
+                        <p class="card-text">
+                            Verify, activate, and connect with global customers over SMS, voice, email, chat, and
+                            WhatsApp.
+                        </p>
+                    </div>
+                    <!--Animated moving circle (visible only on hover)-->
+                    <div class="animation-circle position-absolute">
+                    </div>
+                </div>
+            </div>
+
+            <!--Bootstrap Column Div (wrapping animated card)-->
+            <div class="col-12 col-lg">
+                <!--Second Animated Card-->
+                <div class="card second position-relative overflow-hidden">
+                    <div class="card-header d-flex flex-row justify-content-between p-0 z-1">
+                        <div class="header-wrapper second">
+                            <h2 class="mb-0">
+                                Twilio CPaaS
+                            </h2>
+                        </div>
+                        <img src="assets/images/right-arrow-icon.svg">
+                    </div>
+                    <div class="card-body d-flex flex-column p-0 z-1">
+                        <h2 class="card-title mb-0">
+                            Know your customers personally
+                        </h2>
+                        <p class="card-text">
+                            Combine data across the customer lifecycle into a single, golden profile with our CDP.
+                        </p>
+                    </div>
+                    <!--Animated moving circle (visible only on hover)-->
+                    <div class="animation-circle position-absolute">
+                    </div>
+                </div>
+            </div>
+
+            <!--Bootstrap Column Div (wrapping animated card)-->
+            <div class="col-12 col-lg">
+                <!--Third Animated Card-->
+                <div class="card third position-relative overflow-hidden">
+                    <div class="card-header d-flex flex-row justify-content-between p-0 z-1">
+                        <div class="header-wrapper third">
+                            <h2 class="mb-0">
+                                Twilio CPaaS
+                            </h2>
+                        </div>
+                        <img src="assets/images/right-arrow-icon.svg">
+                    </div>
+                    <div class="card-body d-flex flex-column p-0 z-1">
+                        <h2 class="card-title mb-0">
+                            Unleash the potential of sales and support
+                        </h2>
+                        <p class="card-text">
+                            Drive revenue and retention through a powerful digital engagement center.
+                        </p>
+                    </div>
+                    <!--Animated moving circle (visible only on hover)-->
+                    <div class="animation-circle position-absolute">
+                    </div>
+                </div>
+            </div>
+            <div class="blank-spacing-divs"></div> <!--blank divs for spacing-->
+        </div>
+    </section>
+
+    <!--Twilio CEP Section-->
+    <section class="twilio-cep-section">
+        <!--Bootstrap row div (containing left and right divs)-->
+        <div class="row g-0">
+            <!--Left Column Div (containing image)-->
+            <div class="col-12 col-lg-5 col-xxl-4 d-flex justify-content-center p-3">
+                <!--Relatively positioned image (visible only on screens larger than 992px)-->
+                <img class="position-relative d-lg-none position-relative" src="assets/images/twilio-cep-img.svg">
+            </div>
+            <!--Right Column Div (containing text and image)-->
+            <div class="col-12 col-lg-7 col-xxl-8 d-flex flex-row align-items-center justify-content-start">
+                <!--Relatively positioned image div (visible only on screens lower than 992px)-->
+                <div class="image-wrapper d-none d-lg-block">
+                    <img class="position-relative" src="assets/images/twilio-cep-img.svg">
+                </div>
+                <!--Div containing text and button-->
+                <div class="d-flex flex-column  gap-3">
+                    <h3 class="section-heading text-center text-lg-start">
+                        <img src="assets/images/site-logo-sm.svg">
+                        Twilio CEP
+                    </h3>
+                    <h1 class="section-title text-center text-lg-start">
+                        Twilio <span>Customer</span> Engagement Platform
+                    </h1>
+                    <p class="para text-center text-lg-start">
+                        A powerful platform where customer data and customer communications meet.
+                    </p>
+                    <button>Discover Twilio CEP <i class="fa-solid fa-arrow-right ps-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Get Started Section-->
+    <section class="get-started-section d-flex flex-column align-items-center">
+        <!--Get Started Section div (relatively positioned and smaller width)-->
+        <div class="p-5 gap-3 d-flex flex-column">
+            <!--Div containing text and buttons-->
+            <h3 class="section-heading text-center">
+                <img src="assets/images/site-logo-sm.svg">
+                Get Started Today
+            </h3>
+            <h1 class="section-title text-center">
+                Start building with Twilio for <span>free</span>
+            </h1>
+            <p class="para text-center">
+                Sign up and start building your ideal customer engagement experience today.
+            </p>
+            <div class="buttons-div d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                <button class="btn btn-danger buttons">
+                    Start for free
+                </button>
+                <button class="btn btn-outline-danger buttons">
+                    View Pay as you go pricing
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="pt-5">
+        <!--Bootstrap row div (containing footer divs)-->
+        <div class="row g-0 p-5 gap-3 mt-5">
+            <!--First column div (containing logo and social sites links)-->
+            <div
+                class="socials col-12 col-lg d-flex flex-column gap-3 align-items-center align-items-lg-start mb-5 mb-lg-0">
+                <img src="assets/images/site-logo-footer.svg">
+                <p class="para text-center text-lg-start">
+                    Sorem ipsum dolor sit amet consectetur. Conse laoreesy condimentum sit vitae.
+                </p>
+                <!--Div containing social sites links-->
+                <div class="icons-wrapper d-flex flex-row gap-3">
+                    <img src="assets/images/youtube-icon-footer.svg">
+                    <img src="assets/images/insta-icon-footer.svg">
+                    <img src="assets/images/facebook-icon-footer.svg">
+                    <img src="assets/images/x-icon-footer.svg">
+                </div>
+            </div>
+            <!--Second column div (containing products)-->
+            <div class="footer-links col-12 col-md d-flex flex-column gap-3 mb-5 mb-lg-0">
+                <!--Div heading-->
+                <h2 class="pb-lg-4 text-center text-md-start">Products</h2>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <!--List items containing texts and right arrow icons (visible only on hover)-->
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Viber Messaging</p>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Whatsapp Messaging</p>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Telegram Messaging</p>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Message Messaging</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Third column div (containing links)-->
+            <div class="footer-links col-12 col-md d-flex flex-column gap-3 mb-5 mb-lg-0">
+                <!--Div heading-->
+                <h2 class="pb-lg-4 text-center text-md-start">Links</h2>
+                <ul class="list-unstyled d-flex flex-column gap-2">
+                    <!--List items containing texts and right arrow icons (visible only on hover)-->
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">About</p>
+                    </li>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Our Services</p>
+                    </li>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Company Hisory</p>
+                    </li>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Latest News</p>
+                    </li>
+                    </li>
+                    <li class="d-flex flex-row align-items-center justify-content-center justify-content-md-start">
+                        <i class="footer-arrow-icon fa-solid fa-chevron-right me-3"></i>
+                        <p class="para footer-para m-0">Contact Us</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Third column div (containing address, phone and email)-->
+            <div class="footer-contact col-12 col-md d-flex flex-column gap-3 mb-2 mb-lg-0">
+                <!--Div heading-->
+                <h2 class="pb-lg-4 text-center text-md-start">Contact Us</h2>
+                <!--Wrapper div-->
+                <div class="wrapper d-flex flex-column gap-3">
+                    <!--Divs containing icons and text-->
+                    <div
+                        class="d-flex flex-row align-items-start justify-content-center justify-content-md-start gap-3">
+                        <img src="assets/images/map-icon.svg">
+                        <p class="para text-center text-md-start">
+                            Office Number S41 Gold Point Plaza Rawalpindi
+                        </p>
+                    </div>
+                    <div
+                        class="d-flex flex-row align-items-start justify-content-center justify-content-md-start gap-3">
+                        <img src="assets/images/phone-icon.svg">
+                        <p class="para text-center text-md-start">
+                            +92 334 44 22 266
+                        </p>
+                    </div>
+                    <div
+                        class="d-flex flex-row align-items-start justify-content-center justify-content-md-start gap-3">
+                        <img src="assets/images/email-icon.svg">
+                        <p class="para text-center text-md-start">
+                            info@owasoftltd.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</html>
