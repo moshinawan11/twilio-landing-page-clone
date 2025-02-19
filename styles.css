@@ -28,6 +28,11 @@ nav {
     padding-bottom: 8px;
 }
 
+.navbar-links span {
+    transform: rotate(0.25turn);
+    font-size: 18px;
+}
+
 /* Changing color and setting border on navbar links on hover */
 .navbar-links>li:hover {
     color: var(--primary-color);
@@ -945,7 +950,7 @@ nav>div>img {
 }
 
 .twilio-cep-section .image-wrapper{
-    width: 200px;
+    width: 150px;
     right: 450px;
 }
 /* -------------------------- */
