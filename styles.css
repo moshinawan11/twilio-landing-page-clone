@@ -40,7 +40,7 @@ nav {
     transition: all 0.3s;
 }
 
-.navbar-links>li:hover i{
+.navbar-links>li:hover i {
     color: var(--primary-color);
     transition: all 0.3s;
 }
@@ -217,6 +217,7 @@ nav>div>img {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 /* ----------------------------------- */
 
 .intro-section-msgs-list>.sixth {
@@ -255,6 +256,7 @@ nav>div>img {
 .messaging-services-section>.section-heading:last-child>span {
     color: var(--primary-color);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* General section title text styling */
@@ -385,7 +387,8 @@ nav>div>img {
 
 /* Product features section accordion styling */
 
-.accordion button, i {
+.accordion button,
+i {
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
@@ -403,7 +406,7 @@ nav>div>img {
     border-top: 2px solid #B8B8BE;
 }
 
-.accordion-item>.accordion-header .accordion-button {
+.accordion-item > .accordion-header .accordion-button {
     border-radius: var(--bs-accordion-inner-border-radius);
 }
 
@@ -411,48 +414,58 @@ nav>div>img {
     background-color: white;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
     color: var(--secondary-color);
     background-color: inherit;
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
     box-shadow: none;
 }
 
-.accordion-body > h2{
+.accordion-body>h2 {
     font-size: 18px;
     color: var(--secondary-color);
 }
 
-.accordion-body > .first-div{
+.accordion-body>.first-div {
     background-color: #FFDFE4;
     border-radius: 5px;
 }
 
-.accordion-body img{
+.accordion-body>div:not(.first-div):hover h3{
+    color: var(--primary-color);
+    transition: color 0.5s;
+}
+
+.accordion-body>div:not(.first-div):hover i{
+    color: var(--primary-color);
+    transition: color 0.5s;
+}
+
+.accordion-body img {
     width: 30px;
 }
 
-.accordion-body h3{
+.accordion-body h3 {
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 16px;
 }
 
-.accordion-body p{
+.accordion-body p {
     color: var(--secondary-color);
     font-weight: 400;
     font-size: 16px;
+    text-align: justify;
 }
 
 /* ---------------------------- */
 
 /* Product Features section right image */
 .product-features-section>.row>div:nth-child(3) {
-    background-image: url(assets/images/products-features-section-img.svg);
+    background-image: url(assets/images/products-features-section-img.png);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
 }
 
@@ -471,24 +484,25 @@ nav>div>img {
 
 /* Positioning Product Features section animated right icons */
 .product-features-section-right>div:nth-child(1) {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
 }
 
 .product-features-section-right>div:nth-child(2) {
-    transform: translateX(0px);
+    transform: translateX(-30px);
 }
 
 .product-features-section-right>div:nth-child(3) {
-    transform: translateX(70px);
+    transform: translateX(40px);
 }
 
 .product-features-section-right>div:nth-child(4) {
-    transform: translateX(70px);
+    transform: translateX(50px);
 }
 
 .product-features-section-right>div:nth-child(5) {
-    transform: translateX(30px);
+    transform: translateX(0px);
 }
+
 /* -------------------------------------------- */
 
 /* Styling Product features section right icons */
@@ -499,19 +513,19 @@ nav>div>img {
 
 .product-features-section-right>div:nth-child(2)>img {
     width: 110px;
-    transform: translateY(-230px);
+    transform: translateY(-180px);
     animation: heartbeats-animation2 2s ease-in-out 0s infinite alternate-reverse forwards;
 }
 
 .product-features-section-right>div:nth-child(3)>img {
     width: 80px;
-    transform: translateY(-230px);
+    transform: translateY(-210px);
     animation: heartbeats-animation3 2s ease-in-out 4s infinite alternate-reverse forwards;
 }
 
 .product-features-section-right>div:nth-child(4)>img {
     width: 80px;
-    transform: translateY(-170px);
+    transform: translateY(-150px);
     animation: heartbeats-animation4 2s ease-in-out 1s infinite alternate-reverse forwards;
 }
 
@@ -519,6 +533,7 @@ nav>div>img {
     width: 110px;
     animation: heartbeats-animation5 2s ease-in-out 2s infinite alternate-reverse forwards;
 }
+
 /* --------------------------------- */
 
 /* Product Features section right icons animations for each icon */
@@ -571,6 +586,7 @@ nav>div>img {
         width: 80px;
     }
 }
+
 /* -------------------------------------------- */
 
 /* Setting bg pattern images on Codes Section */
@@ -590,7 +606,7 @@ nav>div>img {
     line-height: 72px;
 }
 
-.codes-section .section-title span{
+.codes-section .section-title span {
     border-bottom: 3px dashed var(--primary-color);
 }
 
@@ -632,6 +648,7 @@ nav>div>img {
     letter-spacing: 0px;
     color: #B8B8BE;
 }
+
 /* ---------------------- */
 
 /* Styling Codes-div header (programming languages icons) */
@@ -659,13 +676,14 @@ nav>div>img {
     cursor: auto;
 }
 
-.codes-div>div:first-child p{
+.codes-div>div:first-child p {
     cursor: pointer;
 }
 
 .codes-div>div:first-child>div:first-child {
     border-bottom: 3px solid var(--primary-color);
 }
+
 /* ------------------------------------- */
 
 /* Styling Code section's code text */
@@ -716,6 +734,7 @@ nav>div>img {
 .code-section-text.code-line {
     color: white;
 }
+
 /* --------------------------- */
 
 /* Try Product section styling */
@@ -760,6 +779,7 @@ nav>div>img {
 .try-product-section .card-text {
     color: #666672;
 }
+
 /* ------------------------------ */
 
 /* Feedback section bg pattern images */
@@ -789,6 +809,7 @@ nav>div>img {
 .clients-images>div:nth-child(2)>img {
     border-radius: 60px;
 }
+
 /* ------------------------ */
 
 /* Styling clients reviews div */
@@ -842,15 +863,16 @@ nav>div>img {
 .client-name img {
     width: 100%;
 }
+
 /* -------------------------- */
 
 /* CPaaS section styling */
-.cpaas-section{
+.cpaas-section {
     padding: 50px 150px;
 }
 
 /* Styling CPaaS section animated cards */
-.cpaas-section .card{
+.cpaas-section .card {
     background-color: inherit;
     border: 1px solid #96969E;
     border-radius: 15px;
@@ -859,30 +881,30 @@ nav>div>img {
     height: 100%;
 }
 
-.cpaas-section .card-header{
+.cpaas-section .card-header {
     background-color: inherit;
     border: none;
 }
 
 /* Styling CPaaS section cards headings */
-.cpaas-section .header-wrapper{
+.cpaas-section .header-wrapper {
     border-radius: 20px;
     padding: 4px 10px;
 }
 
-.cpaas-section .header-wrapper.first{
+.cpaas-section .header-wrapper.first {
     background-color: #FFCF73;
 }
 
-.cpaas-section .header-wrapper.second{
+.cpaas-section .header-wrapper.second {
     background-color: #84F3CA;
 }
 
-.cpaas-section .header-wrapper.third{
+.cpaas-section .header-wrapper.third {
     background-color: #82CDFF;
 }
 
-.cpaas-section .header-wrapper h2{
+.cpaas-section .header-wrapper h2 {
     font-family: Rubik;
     font-weight: 500;
     font-size: 14px;
@@ -915,24 +937,25 @@ nav>div>img {
 }
 
 /* Setting bg color transition on heading on hover */
-.cpaas-section .card.first:hover .header-wrapper{
+.cpaas-section .card.first:hover .header-wrapper {
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.cpaas-section .card.second:hover .header-wrapper {
     background-color: white;
     transition: background-color, 0.5s;
 }
 
-.cpaas-section .card.second:hover .header-wrapper{
+.cpaas-section .card.third:hover .header-wrapper {
     background-color: white;
     transition: background-color, 0.5s;
 }
 
-.cpaas-section .card.third:hover .header-wrapper{
-    background-color: white;
-    transition: background-color, 0.5s;
-}
 /* -------------------------------------- */
 
 /* Styling animation circle */
-.animation-circle{
+.animation-circle {
     bottom: -200px;
     right: -200px;
     border-radius: 1000px;
@@ -940,64 +963,67 @@ nav>div>img {
 }
 
 /* Setting circle animations */
-.cpaas-section .card.first:hover .animation-circle{
+.cpaas-section .card.first:hover .animation-circle {
     background-color: #FFCF73;
-    animation: circle-animation 0.5s linear alternate forwards;
+    animation: circle-animation 0.8s linear alternate forwards;
 }
 
-.cpaas-section .card.second:hover .animation-circle{
+.cpaas-section .card.second:hover .animation-circle {
     background-color: #84F3CA;
-    animation: circle-animation 0.5s linear alternate forwards;
+    animation: circle-animation 0.8s linear alternate forwards;
 }
 
-.cpaas-section .card.third:hover .animation-circle{
+.cpaas-section .card.third:hover .animation-circle {
     background-color: #82CDFF;
-    animation: circle-animation 0.5s linear alternate forwards;
+    animation: circle-animation 0.8s linear alternate forwards;
 }
+
 /* ----------------------------- */
 
 /* Defining circle animation */
 @keyframes circle-animation {
-    from{
+    from {
         height: 0px;
         width: 0px;
         opacity: 0;
     }
-    to{
+
+    to {
         height: 1000px;
         width: 1000px;
         opacity: 1;
     }
 }
 
-.twilio-cep-section > div > div:nth-child(1){
+.twilio-cep-section>div>div:nth-child(1) {
     padding: 40px 60px;
 }
 
-.twilio-cep-section > div > div:nth-child(1) img{
+.twilio-cep-section>div>div:nth-child(1) img {
     max-width: 100%;
     height: auto;
     top: 7em;
 }
 
 /* Styling Twilio CEP section right div */
-.twilio-cep-section > div > div:nth-child(2){
+.twilio-cep-section>div>div:nth-child(2) {
     background-color: #FEEAED;
     padding: 40px 60px 40px 60px;
 }
 
 /* Relativley positioning Twilio CEP section left image */
-.twilio-cep-section > div > div:nth-child(2) div{
+.twilio-cep-section>div>div:nth-child(2) div {
     position: relative;
 }
 
-.twilio-cep-section .image-wrapper{
+.twilio-cep-section .image-wrapper {
     width: 150px;
     right: 450px;
 }
+
 /* -------------------------- */
 
-.twilio-cep-section button{
+.twilio-cep-section button {
     background-color: inherit;
     border: none;
     font-size: 20px;
@@ -1008,67 +1034,67 @@ nav>div>img {
     align-self: flex-start;
 }
 
-.twilio-cep-section button i{
+.twilio-cep-section button i {
     color: var(--secondary-color-2);
 }
 
 /* Positioning Get Started section through transform */
-.get-started-section > div{
+.get-started-section>div {
     width: 70%;
     background-color: #F9F9FC;
     border-radius: 20px;
     transform: translateY(6em);
 }
 
-.get-started-section p{
+.get-started-section p {
     color: var(--secondary-color-2);
 }
 
 /* Setting bg pattern images on footer */
-footer{
+footer {
     width: 100%;
     background-color: #0B0B13;
     background-image: url(assets/images/footer-bg-left.svg),
-                        url(assets/images/footer-bg-right.svg);
+        url(assets/images/footer-bg-right.svg);
     background-position: left, right;
     background-repeat: no-repeat;
     background-size: contain, contain;
 }
 
-footer .socials > img{
+footer .socials>img {
     width: 185px;
 }
 
 /* Applying transition on social sites icons */
-footer .icons-wrapper img{
+footer .icons-wrapper img {
     width: 40px;
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-footer .icons-wrapper img:hover{
+footer .icons-wrapper img:hover {
     transform: translateY(-10px);
 }
 
-footer .para{
+footer .para {
     color: #B8B8BE;
 }
 
 /* Setting hover transition on footer links */
-.footer-links .para{
+.footer-links .para {
     position: relative;
     transform: translateX(-25px);
     cursor: pointer;
     transition: transform 0.5s;
 }
 
-.footer-links li:hover .footer-para{
+.footer-links li:hover .footer-para {
     transform: translateX(0px);
     color: var(--primary-color);
 }
 
 /* Setting hover transition on footer arrow icons */
-.footer-links i{
+.footer-links i {
     transform: scaleX(0);
     opacity: 0;
     cursor: pointer;
@@ -1076,19 +1102,15 @@ footer .para{
     transition: opacity 0.5s;
 }
 
-.footer-links li:hover .footer-arrow-icon{
+.footer-links li:hover .footer-arrow-icon {
     transform: scaleX(1);
     opacity: 1;
 }
 
-.footer-links, .footer-contact h2{
+.footer-links,
+.footer-contact h2 {
     font-weight: 700;
     font-size: 28px;
     line-height: 36px;
     color: white;
 }
-
-
-
-
-
