@@ -1,0 +1,357 @@
+/* For screens larger than 2079px */
+@media screen and (min-width: 2079px) {
+
+    /* Show blank spacing divs */
+    .nav-blank-spacing-divs {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+}
+
+
+/* For screens larger than 1700px */
+@media screen and (min-width: 1700px) {
+
+    .intro-section {
+        padding: 100px 60px;
+    }
+
+
+    .intro-section>div>div>h1 {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 65px;
+        letter-spacing: -2px;
+    }
+
+    /* Show blank spacing divs */
+    .blank-spacing-divs {
+        display: flex;
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .messaging-services-section {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    .try-product-section-footer {
+        gap: 0px;
+    }
+
+    .try-product-section-footer>div:nth-child(2) {
+        padding-right: 80px;
+    }
+
+    .try-product-section-footer>div:nth-child(3) {
+        padding-right: 80px;
+    }
+
+    .try-product-section-footer>div:nth-child(4) {
+        padding-right: 80px;
+    }
+
+    .cpaas-section {
+        padding: 50px 0px;
+    }
+
+    .codes-section-footer {
+        gap: 0px;
+    }
+
+    .codes-section-footer>div:nth-child(2) {
+        padding-right: 80px;
+    }
+
+    .codes-section-footer>div:nth-child(3) {
+        padding-right: 80px;
+    }
+
+    .codes-section-footer>div:nth-child(4) {
+        padding-right: 80px;
+    }
+}
+
+/* For screens larger than 1400px */
+@media screen and (min-width: 1400px) {
+    nav {
+        padding: 2em 9em;
+    }
+
+    .intro-section {
+        gap: 100px;
+    }
+
+    .dropdownMenu.show{
+        transform: translateY(45px);
+    }
+    
+    @keyframes dropdown-animation-bottom{
+        from{
+            transform: translateY(-250px);
+        }
+        to{
+            transform: translateY(45px);
+        }
+    } 
+    
+    @keyframes dropdown-animation-top{
+        from{
+            transform: translateY(45px);
+        }
+        to{
+            transform: translateY(-250px);
+        }
+    } 
+}
+
+/* For screens larger than 992px */
+@media screen and (min-width: 992px) {
+    .product-features-section>p {
+        padding: 0 10em;
+    }
+
+    .feedback-section>p {
+        padding: 0 10em;
+    }
+}
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .intro-section .para {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .intro-section>div>div>h1 {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 65px;
+    }
+
+    .messaging-services-section .right-cards {
+        padding-right: 14rem !important;
+        padding-left: 14rem !important;
+    }
+
+    .cpaas-section {
+        padding: 50px 50px;
+    }
+
+    .codes-div {
+        width: 100%;
+    }
+
+
+}
+
+/* For screens smaller than 992px */
+@media screen and (max-width: 992px) {
+    .intro-section {
+        padding: 20px 60px;
+    }
+
+    .messaging-services-section {
+        padding: 5em;
+    }
+
+    .product-features-section {
+        padding: 5em;
+    }
+
+    .messaging-services-section .right-cards {
+        padding-right: 8rem !important;
+        padding-left: 8rem !important;
+    }
+
+    .product-features-section>.row>div:nth-child(3) {
+        background-image: url(assets/images/product-features-section-img-sm.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .product-features-section>div>div:nth-child(3) {
+        height: 600px;
+    }
+
+    .codes-section {
+        padding: 5em;
+    }
+
+    .codes-div {
+        width: 100%;
+    }
+
+    .codes-section .section-title span h1{
+        left: 0; 
+        right: 0; 
+        margin-inline: auto; 
+        width: fit-content;
+    }
+
+    .try-product-section>div:first-child>div:nth-child(3) {
+        height: 600px;
+    }
+
+    .clients-reviews {
+        border: none;
+        padding: 0px 109px;
+    }
+
+    .cpaas-section {
+        padding: 0px 200px;
+    }
+
+    .twilio-cep-section>div>div:nth-child(1) {
+        padding: 0px 60px;
+    }
+
+    .twilio-cep-section>div>div:nth-child(2) {
+        padding: 9em 20px 3em 20px;
+    }
+
+    .twilio-cep-section>div>div:nth-child(2) div {
+        right: 0px;
+    }
+
+    .twilio-cep-section>div>div:nth-child(2) div>button {
+        align-self: center;
+    }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .messaging-services-section>.row {
+        padding: 0 2em;
+    }
+
+    .clients-reviews {
+        padding: 0;
+    }
+
+    .cpaas-section {
+        padding: 0px 100px;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #0B0B13;
+        background-image: none;
+    }
+
+    .messaging-services-section .right-cards {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 2em 7px;
+    }
+
+    .messaging-services-section {
+        padding: 2em;
+    }
+
+    .intro-section>div>div>h1 {
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0px;
+    }
+
+    .messaging-services-section>.row {
+        padding: 0 0em;
+    }
+
+    .section-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .para {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .product-features-section {
+        padding: 2em;
+    }
+
+    .product-features-section>div>div:nth-child(3) {
+        height: 300px;
+    }
+
+    .codes-section {
+        padding: 2em;
+    }
+
+    .code>.padding-row {
+        gap: 0px;
+    }
+
+    .code>.padding-row2 {
+        gap: 0px;
+    }
+
+    .section-heading {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .intro-section {
+        padding: 20px 0px;
+    }
+
+    .intro-section>div:nth-child(2)>div {
+        padding: 0px 30px;
+    }
+
+    .intro-section-msgs-list {
+        padding-right: 30px;
+    }
+
+    .clients-reviews .review {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .cpaas-section {
+        padding: 0px 20px;
+    }
+
+    .try-product-section{
+        padding: 2em !important;
+    }
+
+    .try-product-section>div:first-child>div:nth-child(3) {
+        height: 300px;
+    }
+
+    .codes-section .section-title {
+        line-height: 50px;
+    }
+
+    .get-started-section>div {
+        width: 90%;
+    }
+}
+
+/* For screens smaller than 400px */
+@media screen and (max-width: 400px) {
+    nav {
+        padding: 2em 7px;
+    }
+
+    .get-started-section>div {
+        width: 100%;
+    }
+
+    .feedback-section {
+        padding: 2em;
+    }
+}
